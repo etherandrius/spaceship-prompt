@@ -10,8 +10,7 @@
 export SPACESHIP_VERSION='3.11.2'
 
 # Common-used variable for new line separator
-NEWLINE='
-'
+NEWLINE=''
 
 # Determination of Spaceship working directory
 # https://git.io/vdBH7
@@ -41,20 +40,20 @@ fi
 if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
   SPACESHIP_PROMPT_ORDER=(
     time          # Time stampts section
-    user          # Username section
+    #user          # Username section
     dir           # Current directory section
     host          # Hostname section
     git           # Git section (git_branch + git_status)
-    hg            # Mercurial section (hg_branch  + hg_status)
-    package       # Package version
-    node          # Node.js section
-    ruby          # Ruby section
-    elm           # Elm section
-    elixir        # Elixir section
-    xcode         # Xcode section
-    swift         # Swift section
+    #hg            # Mercurial section (hg_branch  + hg_status)
+    #package       # Package version
+    #node          # Node.js section
+    #ruby          # Ruby section
+    #elm           # Elm section
+    #elixir        # Elixir section
+    #xcode         # Xcode section
+    #swift         # Swift section
     golang        # Go section
-    php           # PHP section
+    #php           # PHP section
     rust          # Rust section
     haskell       # Haskell Stack section
     julia         # Julia section
@@ -64,15 +63,15 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     conda         # conda virtualenv section
     pyenv         # Pyenv section
     dotnet        # .NET section
-    ember         # Ember.js section
+    #ember         # Ember.js section
     kubecontext   # Kubectl context section
     terraform     # Terraform workspace section
     exec_time     # Execution time
-    line_sep      # Line break
-    battery       # Battery level and status
+    #line_sep      # Line break
+    #battery       # Battery level and status
     vi_mode       # Vi-mode indicator
     jobs          # Background jobs indicator
-    exit_code     # Exit code section
+    #exit_code     # Exit code section
     char          # Prompt character
   )
 fi
